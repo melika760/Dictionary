@@ -1,3 +1,13 @@
 .Dictionary section{
     background-color: rgb(62, 197, 152);
+    padding: 15px;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px rgb(0, 0, 0,0.1);
+}
+.Dictionary input{
+    width: 100%;
+}
+.Dictionary .Searchinput{
+   padding: 4px;
 }

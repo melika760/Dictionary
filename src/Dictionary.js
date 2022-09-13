@@ -26,11 +26,16 @@ function Changkeyword(event){
 }
 if(loaded){   return(
     <div className='Dictionary container'>
-        <h1 >Dictionary</h1>
+        <h1 className='text-center' >Dictionary</h1>
         <section>
         <form onSubmit={handlesubmit}>
-            <input type="search" autoFocus={true} onChange={Changkeyword}/>
+            <div className='row'>
+            <div className='col-8'>
+            <input className='Searchinput' type="search" autoFocus={true} onChange={Changkeyword}/></div>
+            <div className='col-4'>
             <input type="submit" className='btn btn-primary'/>
+            </div>
+            </div>
         </form>
         </section>
         <Results results={result}/>
