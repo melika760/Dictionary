@@ -7,6 +7,8 @@
 }
 .Dictionary input{
     width: 100%;
+    margin: 10px;
+    
 }
 .Dictionary .Searchinput{
    padding: 4px;

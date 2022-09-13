@@ -30,9 +30,9 @@ if(loaded){   return(
         <section>
         <form onSubmit={handlesubmit}>
             <div className='row'>
-            <div className='col-8'>
+            <div className='col-10'>
             <input className='Searchinput' type="search" autoFocus={true} onChange={Changkeyword}/></div>
-            <div className='col-4'>
+            <div className='col-2'>
             <input type="submit" className='btn btn-primary'/>
             </div>
             </div>
