@@ -1,13 +1,22 @@
 import React,{useState}from 'react';
 import axios from 'axios';
 import Results from './Results';
-export default function Dictionary(){
-const[keyword,Setkeyword]= useState('')
+import "./Dictionary.css";
+export default function Dictionary(props){
+const[keyword,Setkeyword]= useState(props.defaultKeyword)
 const[result,Setresult]=useState(null)
-function handlesubmit(event){
-event.preventDefault();
+const[loaded,Setloaded]=useState(false)
+function search(){
 let apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en/${keyword}`
 axios.get(apiUrl).then(handleResponse)
+}
+function handlesubmit(event){
+event.preventDefault();
+search()
+}
+function load(){
+    Setloaded(true);
+    search()
 }
 function handleResponse(response){
     Setresult(response.data[0])
@@ -15,14 +24,19 @@ function handleResponse(response){
 function Changkeyword(event){
     Setkeyword(event.target.value)
 }
-    return(
-        <div className='dictionary container'>
-            <h1 >Dictionary</h1>
-            <form onSubmit={handlesubmit}>
-                <input type="search" autoFocus={true} onChange={Changkeyword}/>
-                <input type="submit" className='btn btn-primary'/>
-            </form>
-            <Results results={result}/>
-        </div>
-    )
+if(loaded){   return(
+    <div className='Dictionary container'>
+        <h1 >Dictionary</h1>
+        <section>
+        <form onSubmit={handlesubmit}>
+            <input type="search" autoFocus={true} onChange={Changkeyword}/>
+            <input type="submit" className='btn btn-primary'/>
+        </form>
+        </section>
+        <Results results={result}/>
+    </div>
+)}else{
+    load()
+}
+ 
 }
