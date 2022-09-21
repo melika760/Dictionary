@@ -1,7 +1,7 @@
 .Synonyms li{
     display: inline-block;
-    padding: 5px;
     margin: 5px;
-    background-color: aquamarine;
+    padding: 3px;
+    background-color: #e190a0;
     border-radius: 4px;
 }

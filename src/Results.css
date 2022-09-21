@@ -1,5 +1,7 @@
 .Results .WordName{
-font-style:oblique;
-font-weight: bolder;
+font-family: 'Permanent Marker', cursive;
 
+}
+.difineWords{
+    font-family: 'Courgette', cursive;
 }

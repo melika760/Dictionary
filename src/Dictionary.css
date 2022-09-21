@@ -1,5 +1,5 @@
 .Dictionary section{
-    background-color: rgb(62, 197, 152);
+    background-color: #e0cec0;
     padding: 15px;
     margin: 20px;
     border-radius: 8px;
@@ -7,9 +7,30 @@
 }
 .Dictionary input{
     width: 100%;
-    margin: 10px;
-    
+    border:1px solid #c55c71; 
 }
 .Dictionary .Searchinput{
    padding: 4px;
+}
+.logo{
+    width: 300px;
+    display: block;
+    margin: auto;
+    border-radius: 8px;
+    padding: 20px;
+}
+.btn-color{
+    background-color: #c55c71;
+    font-weight: bold;
+    border: 1px solid #5e0315;
+    color: #5e0315;
+}
+.btn-color:hover{
+    background-color: rgb(245, 223, 223);
+    color: #c55c71;
+    border:1px solid #c55c71;
+}
+.title{
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
 }
