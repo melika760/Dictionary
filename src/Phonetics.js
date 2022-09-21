@@ -6,7 +6,6 @@ export default function Phonetics(props){
     return (
         <div className="Phonetic">
  <ReactAudioPlayer src={props.phonetics.audio}
-  autoPlay
   controls
 />
 <p className="PhoneticText">{props.phonetics.text}</p>
