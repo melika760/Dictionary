@@ -4,7 +4,8 @@
     margin: 15px;
     border-radius: 8px;
     box-shadow: 5px 5px 5px rgb(0, 0, 0,0.1);
-
+    max-width: 100%;
+   
 }
 .Dictionary input{
     width: 100%;
@@ -13,6 +14,7 @@
 }
 .Dictionary .Searchinput{
    padding: 4px;
+    margin-right: 0px;
 }
 .logo{
     width: 300px;
