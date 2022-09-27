@@ -50,6 +50,7 @@ if(loaded){   return(
         </section>
         <Results results={result}/>
         <Photos photos={photos}/>
+        
     </div>
 )}else{
     load()
