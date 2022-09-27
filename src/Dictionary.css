@@ -28,6 +28,8 @@
     font-weight: bold;
     border: 1px solid #5e0315;
     color: #5e0315;
+    display: inline-block;
+    margin: auto 0;
 }
 .btn-color:hover{
     background-color: rgb(245, 223, 223);
